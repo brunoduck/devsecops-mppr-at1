@@ -1,0 +1,17 @@
+1) Diferencie CI, CD e Deploy Contínuo
+
+Em que pese os três se referirem a automações e práticas culturais no desenvolvimento de software, existem algumas diferenças que caracterizam cada um deles:
+
+ - Continuous Integration: na integração contínua, mudanças de código são integradas aos ambientes de forma rápida - e automática. Ou seja, não há impedimentos ao desenvolvedor para adicionar suas mudanças de código ao repósito do projeto. Pelo contrário, ele é estimulado a subir seu código novo, de forma a manter o repositório consistente com as mudanças mais recente e evitar o merge hell.
+ - Continuous Delivery: já a entrega contínua é a capacidade de entregar as mudanças no produto ao ambiente de produção de forma autmoática, permitindo que elas sejam liberadas aos usuários com uma frequencia maior, porém depende de uma intervenção manual.
+ - Continuous Deployment: já no deploy contínuo a entrega em produção é feita de forma totalmente automática, sem intervenção humana - a menos que envolva impedimentos relacionados ao negócio.
+
+ 2) Explique o pipeline de entrega
+Em DevSecOps, o pipeline de entrega é responsável por trilhar todo o caminho para uma mudança de software entrar em produção, desde os testes unitários, de integração, passando pela infraestrutura e segurança, para que o build seja feito de forma automática e as mudanças aplicadas no ambiente sem intervenções humanas. Nesse contexto, o pipeline permite que os passos comuns aos desenvolvedores sejam mapeados e executados a partir de um único comando.
+
+A grande vantagem do pipeline de entrega é evitar erros no processo de deploy. Uma vez que foram identificadas todas as possibilidades de automação, esse fluxo garante que os passos serão executados sempre da mesma forma.
+
+ 3) Cite ao menos um padrão de release e sua utilidade
+Um padrão de release muito utilizado é o Feature toogle, cuja utilidade é permitir que código ainda em desenvolvimento suba a produção, porém fique desativado. Dessa forma, esse código incompleto não afeta a usabilidade do software, bem como não é exibido aos usuários.
+
+Assim, os desenvolvedores não precisam ficar "travados" aguardando a conclusão de uma funcionalidade que possa demorar para só então realizar o "merge'.
